@@ -1,0 +1,92 @@
+{
+  "name": "kasi",
+  "displayName": "Kasi",
+  "publisher": "fabiospampinato",
+  "repository": "github:fabiospampinato/kasi",
+  "description": "A little wrapper over the \"kasi\" package for changing the casing of selections.",
+  "icon": "resources/logo-128x128.png",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "kasi.toCamelCase",
+        "title": "Kasi: Camel Case"
+      },
+      {
+        "command": "kasi.toConstantCase",
+        "title": "Kasi: Constant Case"
+      },
+      {
+        "command": "kasi.toDotCase",
+        "title": "Kasi: Dot Case"
+      },
+      {
+        "command": "kasi.toKebabCase",
+        "title": "Kasi: Kebab Case"
+      },
+      {
+        "command": "kasi.toLowerCase",
+        "title": "Kasi: Lower Case"
+      },
+      {
+        "command": "kasi.toPascalCase",
+        "title": "Kasi: Pascal Case"
+      },
+      {
+        "command": "kasi.toPathCase",
+        "title": "Kasi: Path Case"
+      },
+      {
+        "command": "kasi.toSnakeCase",
+        "title": "Kasi: Snake Case"
+      },
+      {
+        "command": "kasi.toTitleCase",
+        "title": "Kasi: Title Case"
+      },
+      {
+        "command": "kasi.toUpperCase",
+        "title": "Kasi: Upper Case"
+      }
+    ]
+  },
+  "scripts": {
+    "bundle:dev": "tsex bundle --external vscode --format cjs --platform node --no-declare",
+    "bundle:prod": "tsex bundle --external vscode --format cjs --platform node --minify",
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "debug": "code --extensionDevelopmentPath $PWD --inspect-extensions 9222",
+    "package": "vsce package",
+    "prepublishOnly": "scex -bs clean bundle:prod",
+    "vscode:prepublish": "scex -bs clean bundle:prod",
+    "dev": "scex -bs bundle:dev debug",
+    "prod": "scex -bs bundle:prod debug"
+  },
+  "categories": [
+    "Other"
+  ],
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "keywords": [
+    "vscode",
+    "vsc",
+    "extension",
+    "kasi",
+    "case",
+    "casing"
+  ],
+  "dependencies": {
+    "kasi": "^1.1.0",
+    "vscode-extras": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.24",
+    "@types/vscode": "^1.87.0",
+    "esbuild": "0.20.2",
+    "scex": "^1.1.0",
+    "tsex": "^3.2.1",
+    "typescript": "^5.4.2"
+  }
+}

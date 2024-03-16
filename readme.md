@@ -1,17 +1,17 @@
 # Kasi
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fabiospampinato/kasi/master/resources/logo.png" width="128" alt="Logo">
+  <img src="https://raw.githubusercontent.com/fabiospampinato/vscode-kasi/master/resources/logo.png" width="128" alt="Logo">
 </p>
 
 A little wrapper over the [`kasi`](https://github.com/fabiospampinato/kasi) package for changing the casing of selections.
 
 ## Install
 
-Follow the instructions in the [Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.kasi), or run the following in the command palette:
+Follow the instructions in the [Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-kasi), or run the following in the command palette:
 
 ```sh
-ext install fabiospampinato.kasi
+ext install fabiospampinato.vscode-kasi
 ```
 
 ## Usage

@@ -1,8 +1,8 @@
 {
-  "name": "kasi",
+  "name": "vscode-kasi",
   "displayName": "Kasi",
   "publisher": "fabiospampinato",
-  "repository": "github:fabiospampinato/kasi",
+  "repository": "github:fabiospampinato/vscode-kasi",
   "description": "A little wrapper over the \"kasi\" package for changing the casing of selections.",
   "icon": "resources/logo-128x128.png",
   "version": "1.0.0",

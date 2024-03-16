@@ -5,7 +5,7 @@
   "repository": "github:fabiospampinato/vscode-kasi",
   "description": "A little wrapper over the \"kasi\" package for changing the casing of selections.",
   "icon": "resources/logo-128x128.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "contributes": {
     "commands": [
